@@ -10,6 +10,7 @@ ul {
 .smallheader {
   background-color: rgb(181, 182, 187);
   display: flex;
+  width: 100%;
 }
 /* Navbar */
 .navbar {
@@ -42,6 +43,11 @@ header {
   min-height: 90vh;
   background-image: url("./img/background.jpeg");
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Container holding the box and the text */
@@ -49,10 +55,9 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 32px;
   min-height: calc(70vh - 80px);
   flex-wrap: wrap;
@@ -61,6 +66,9 @@ header {
 .welcome-block {
   padding: 30px;
   max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .welcome-block h3 {
@@ -102,40 +110,6 @@ header {
   text-align: center;
 }
 
-/* events*/
-section {
-  width: 100%;
-  margin: 80px auto;
-  max-width: 1900px;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.col {
-  max-width: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.row .col img {
-  width: 70%;
-  margin-top: 20%;
-  margin-bottom: 10%;
-  opacity: 0.4;
-  border-top-left-radius: 220px;
-  border-top-right-radius: 220px;
-}
-
-.row .col img:hover {
-  opacity: 1;
-}
-
 .triangle_down {
   width: 0;
   height: 0;
@@ -144,6 +118,59 @@ section {
   border-top: 30px solid #ffffff;
   font-size: 0;
   line-height: 0;
-  margin-left: 50%;
-  margin-top: -40px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.icon-container {
+  background-color: rgb(174, 181, 214);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 30px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.icon-box p {
+  margin-top: 16px;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 20px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgb(152, 149, 190);
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 20px;
+  }
 }
