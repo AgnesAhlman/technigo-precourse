@@ -29,11 +29,12 @@ ul {
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   font-family: "Josefin Sans", sans-serif;
 }
 
 .nav-links li {
-  margin-left: 70px;
+  margin-left: 15%;
 }
 
 header {
@@ -118,9 +119,6 @@ section {
 
 .col {
   max-width: 33%;
-  min-width: 420px;
-  max-width: 33%;
-  min-width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
