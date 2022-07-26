@@ -93,7 +93,7 @@ header {
   background-color: rgb(255, 255, 255);
   width: 100%;
   max-width: 400px;
-  opacity: 0.4;
+  opacity: 0.8;
   padding: 30px;
   border-radius: 16px;
   font-family: "Josefin Sans", sans-serif;
@@ -102,6 +102,7 @@ header {
 .text-block h4 {
   font-size: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .text-block p {
@@ -160,14 +161,16 @@ header {
   justify-items: center;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+
+  height: 100%;
+  padding: 16px;
 }
 
 .grid-item p {
-  padding: 30px;
   color: #201f1f;
-  font-family: "Josefin Sans", sans-serif;
-  padding-bottom: 50px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 30px;
+  text-align: center;
 }
 .grid-item.brush {
   background-color: rgb(154, 195, 216);
@@ -185,10 +188,10 @@ a {
   color: black;
   text-decoration: none;
 }
-
+/* 
 a:hover {
-  transform: scale(1.2);
-}
+  transform: scale(1.05);
+} */
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .grid-parent {
